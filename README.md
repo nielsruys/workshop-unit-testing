@@ -17,8 +17,20 @@ Finished the exercise:
 
 ## Exercise on [TDD](TDD) (Test Driven Development)
 
+Start with the KATA by opening the powerpoint (pptx) on your desktop.
+
 ## Exercise on [BDD](BDD) (Behavior Driven Development)
 
-## Exercise on [Code Coverage](CodeCoverage)
+Start with the exercise by opening the solution (sln) in [this folder](BDD/Before).
+
+Finished the exercise:
+> [Click here](BDD/After) to take a look at our solution.
+
+## Demo about [Code Coverage](CodeCoverage)
+
+> The code coverage feature is available only in Visual Studio Enterprise edition.
+
+We will start with the demo by opening the solution (sln) in [this folder](CodeCoverage/Before).
+The result with all code snippets we will add during the demo is available in [this folder](CodeCoverage/AFter).
 
 
