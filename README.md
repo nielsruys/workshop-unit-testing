@@ -39,6 +39,6 @@ The result with all code snippets we will add during the demo is available in [t
 
 ## Automatic Regression Testing [Lab](Lab)
 
-You can start with this lab by clicking on [this link](https://www.azuredevopslabs.com/labs/azuredevops/continuousintegration/).
+You can start with the lab by clicking on [this link](https://www.azuredevopslabs.com/labs/azuredevops/continuousintegration/).
 
 
