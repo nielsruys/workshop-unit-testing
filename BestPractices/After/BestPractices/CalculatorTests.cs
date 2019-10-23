@@ -1,3 +1,4 @@
+using FluentAssertions;
 using System;
 using Xunit;
 using Xunit.Abstractions;
@@ -17,6 +18,7 @@ namespace BestPractices
 
             var actual = calculator.Add(value1, value2);
 
+            actual.Should().Be(actual);
             Assert.Equal(expected, actual);
         }
 
@@ -31,7 +33,7 @@ namespace BestPractices
 
             Action action = () => calculator.Add(value1, value2);
 
-            Assert.Throws<OverflowException>(action);
+            action.Should().Throw<OverflowException>();
         }
 
         [Theory]
@@ -45,7 +47,7 @@ namespace BestPractices
 
             var actual = calculator.Subtract(value1, value2);
 
-            Assert.Equal(expected, actual);
+            actual.Should().Be(expected);
         }
 
         [Theory]
@@ -59,8 +61,7 @@ namespace BestPractices
 
             Action action = () => calculator.Subtract(value1, value2);
 
-            Assert.Throws<OverflowException>(action);
+            action.Should().Throw<OverflowException>();
         }
-
     }
 }
