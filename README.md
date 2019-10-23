@@ -45,6 +45,6 @@ You can start with the lab by clicking on [this link](https://www.azuredevopslab
 
 ### Exercise
 
-> You can create an Azure Devops Organization for free. [Click here](https://azure.microsoft.com/en-us/services/devops/) to start for free.
+> You can create an Azure Devops Organization for free. [Click here](https://azure.microsoft.com/en-us/services/devops/) to start free.
 
 
