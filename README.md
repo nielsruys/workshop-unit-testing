@@ -10,6 +10,6 @@
 
 ## Exercise on [BDD](BDD) (Behavior Driven Development)
 
-## Exercise on [CodeCoverage](Code Coverage)
+## Exercise on [CodeCoverage](Code-Coverage)
 
 
