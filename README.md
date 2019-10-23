@@ -10,6 +10,11 @@
 
 ## Exercise on [Best Practices](BestPractices)
 
+Start with the exercise by opening the solution (sln) in [this folder](BestPractices/Before).
+
+Finished the exercise:
+> [Click here](BestPractices/After) to take a look at our solution.
+
 ## Exercise on [TDD](TDD) (Test Driven Development)
 
 ## Exercise on [BDD](BDD) (Behavior Driven Development)
