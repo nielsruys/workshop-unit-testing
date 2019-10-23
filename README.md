@@ -31,6 +31,6 @@ Finished the exercise:
 > The code coverage feature is available only in Visual Studio Enterprise edition.
 
 We will start with the demo by opening the solution (sln) in [this folder](CodeCoverage/Before).
-The result with all code snippets we will add during the demo is available in [this folder](CodeCoverage/AFter).
+The result with all code snippets we will add during the demo is available in [this folder](CodeCoverage/After).
 
 
