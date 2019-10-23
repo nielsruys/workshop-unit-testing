@@ -6,13 +6,17 @@
 
 ## Examples with [Test Doubles](TestDoubles)
 
+All examples are available in the solution (sln) behind [this folder](TestDoubles).
+
 ## Examples with [Data Driven Tests](DataDrivenTestExample)
+
+All examples are available in the solution (sln) behind [this folder](DataDrivenTestExample).
 
 ## Exercise on [Best Practices](BestPractices)
 
 Start with the exercise by opening the solution (sln) in [this folder](BestPractices/Before).
 
-Finished the exercise:
+Finished the exercise?
 > [Click here](BestPractices/After) to take a look at our solution.
 
 ## Exercise on [TDD](TDD) (Test Driven Development)
@@ -23,7 +27,7 @@ Start with the KATA by opening the powerpoint (pptx) on your desktop.
 
 Start with the exercise by opening the solution (sln) in [this folder](BDD/Before).
 
-Finished the exercise:
+Finished the exercise?
 > [Click here](BDD/After) to take a look at our solution.
 
 ## Demo about [Code Coverage](CodeCoverage)
