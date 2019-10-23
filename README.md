@@ -1,8 +1,8 @@
 # workshop-unit-testing
 
-## Examples with [TestDoubles](test-doubles)
+## Examples with [test-doubles](TestDoubles)
 
-## Examples with [DataDrivenTestExample](Data-Driven-Tests)
+## Examples with [Data-Driven-Tests](DataDrivenTestExample)
 
 ## Exercise on [BestPractices](BestPractices)
 
@@ -10,6 +10,6 @@
 
 ## Exercise on [BDD](BDD) (Behavior Driven Development)
 
-## Exercise on [CodeCoverage](Code-Coverage)
+## Exercise on [Code Coverage](CodeCoverage)
 
 
