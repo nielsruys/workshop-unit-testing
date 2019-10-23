@@ -1,4 +1,4 @@
-# workshop-unit-testing
+# Workshop unit-testing
 
 ## Prerequisites
 
