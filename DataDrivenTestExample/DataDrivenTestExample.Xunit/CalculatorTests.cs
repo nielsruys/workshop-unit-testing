@@ -1,3 +1,4 @@
+using FluentAssertions;
 using Xunit;
 
 namespace DataDrivenTestExample.Xunit
@@ -13,7 +14,7 @@ namespace DataDrivenTestExample.Xunit
 
             var result = calculator.Add(value1, value2);
 
-            Assert.Equal(3, result);
+            result.Should().Be(3);
         }
 
         [Theory]
@@ -26,7 +27,7 @@ namespace DataDrivenTestExample.Xunit
 
             var result = calculator.Add(value1, value2);
 
-            Assert.Equal(expected, result);
+            result.Should().Be(expected);
         }
     }
 }

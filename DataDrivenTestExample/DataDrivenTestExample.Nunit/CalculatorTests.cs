@@ -1,4 +1,5 @@
 using DataDrivenTestExample;
+using FluentAssertions;
 using NUnit.Framework;
 
 namespace Tests
@@ -14,7 +15,7 @@ namespace Tests
 
             var result = calculator.Add(value1, value2);
 
-            Assert.AreEqual(3, result);
+            result.Should().Be(3);
         }
 
         [TestCase(1, 2, 3)]
@@ -26,7 +27,7 @@ namespace Tests
 
             var result = calculator.Add(value1, value2);
 
-            Assert.AreEqual(expected, result);
+            result.Should().Be(expected);
         }
     }
 }
