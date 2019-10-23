@@ -37,4 +37,8 @@ Finished the exercise?
 We will start with the demo by opening the solution (sln) in [this folder](CodeCoverage/Before).
 The result with all code snippets we will add during the demo is available in [this folder](CodeCoverage/After).
 
+## Automatic Regression Testing [Lab](Lab)
+
+You can start with this lab by clicking on [this link](https://www.azuredevopslabs.com/labs/azuredevops/continuousintegration/).
+
 
