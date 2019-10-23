@@ -1,5 +1,9 @@
 # workshop-unit-testing
 
+## Prerequisites
+
+[https://docs.microsoft.com/en-us/visualstudio/install/install-visual-studio?view=vs-2019](Download and install Visual Studio 2019 version 16.3 or higher) with the .NET Core cross-platform development workload (in the Other Toolsets section) selected.
+
 ## Examples with [test-doubles](TestDoubles)
 
 ## Examples with [Data-Driven-Tests](DataDrivenTestExample)
