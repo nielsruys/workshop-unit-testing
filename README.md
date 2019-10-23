@@ -25,10 +25,10 @@ Start with the KATA by opening the powerpoint (pptx) on your desktop.
 
 ## Exercise on [BDD](BDD) (Behavior Driven Development)
 
-Start with the exercise by opening the solution (sln) in [this folder](BDD/Before).
+Start with the exercise by opening the solution (sln) in [this folder](BDD/Before/Elevator).
 
 Finished the exercise?
-> [Click here](BDD/After) to take a look at our solution.
+> [Click here](BDD/After/Elevator) to take a look at our solution.
 
 ## Demo about [Code Coverage](CodeCoverage)
 
