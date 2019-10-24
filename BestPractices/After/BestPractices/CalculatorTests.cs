@@ -9,17 +9,16 @@ namespace BestPractices
     {
         [Theory]
         [InlineData(5, 10, 15)]
-        [InlineData(-2, 1, -1)]
-        [InlineData(8, -3, 5)]
-        [InlineData(-8, -3, -11)]
+        [InlineData(2, 5, 7)]
+        [InlineData(int.MinValue, int.MaxValue, -1)]
+        [InlineData(int.MaxValue, int.MinValue, -1)]
         public void Add_ShouldReturnTheSum(int value1, int value2, int expected)
         {
             var calculator = new Calculator();
 
             var actual = calculator.Add(value1, value2);
 
-            actual.Should().Be(actual);
-            Assert.Equal(expected, actual);
+            actual.Should().Be(expected);
         }
 
         [Theory]
@@ -38,9 +37,9 @@ namespace BestPractices
 
         [Theory]
         [InlineData(5, 10, -5)]
-        [InlineData(-2, 1, -3)]
-        [InlineData(8, -3, 11)]
-        [InlineData(-8, -3, -5)]
+        [InlineData(2, 5, -3)]
+        [InlineData(int.MinValue, int.MinValue, 0)]
+        [InlineData(int.MaxValue, int.MaxValue, 0)]
         public void Subtract_ShouldReturnTheDifference(int value1, int value2, int expected)
         {
             var calculator = new Calculator();
