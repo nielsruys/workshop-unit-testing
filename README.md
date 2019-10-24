@@ -8,9 +8,10 @@
 
 All examples are available in the solution (sln) behind [this folder](TestDoubles).
 
-## Examples with [Data Driven Tests](DataDrivenTestExample)
+## Demo about [Test Frameworks](TestFrameworks)
 
-All examples are available in the solution (sln) behind [this folder](DataDrivenTestExample).
+We will start with the demo by opening the solution (sln) in [this folder](TestFrameworks/Before).
+The result with all code snippets we will add during the demo is available in [this folder](TestFrameworks/After).
 
 ## Exercise on [Best Practices](BestPractices)
 

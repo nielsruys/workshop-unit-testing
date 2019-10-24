@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace DataDrivenTestExample
+namespace TestFrameworks
 {
     public class Calculator
     {
