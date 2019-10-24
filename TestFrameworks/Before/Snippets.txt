@@ -1,0 +1,92 @@
+1---------------------------------------------------------------------------------------
+Nunit
+
+        [Test]
+        public void CanAdd()
+        {
+            var calculator = new Calculator();
+            var value1 = 1;
+            var value2 = 2;
+
+            var result = calculator.Add(value1, value2);
+
+            Assert.AreEqual(3, result);
+        }
+
+2---------------------------------------------------------------------------------------
+Xunit 
+
+        [Fact]
+        public void CanAdd()
+        {
+            var calculator = new Calculator();
+            var value1 = 1;
+            var value2 = 2;
+
+            var result = calculator.Add(value1, value2);
+
+            Assert.Equal(3, result);
+        }
+
+3---------------------------------------------------------------------------------------
+Nunit
+
+        [TestCase(1, 2, 3)]
+        [TestCase(4, 6, 10)]
+        [TestCase(2, 2, 4)]
+        public void CanAddTheory(int value1, int value2, int expected)
+        {
+            var calculator = new Calculator();
+
+            var result = calculator.Add(value1, value2);
+
+            Assert.AreEqual(expected, result);
+        }
+
+4---------------------------------------------------------------------------------------
+Xunit
+
+        [Theory]
+        [InlineData(1, 2, 3)]
+        [InlineData(4, 6, 10)]
+        [InlineData(2, 2, 4)]
+        public void CanAddTheory(int value1, int value2, int expected)
+        {
+            var calculator = new Calculator();
+
+            var result = calculator.Add(value1, value2);
+
+            Assert.Equal(expected, result);
+        }
+
+5---------------------------------------------------------------------------------------
+Nunit
+
+	[Ignore("for demo purposes")]
+
+6---------------------------------------------------------------------------------------
+Xunit
+	
+	[Fact(Skip = "for demo purposes")]
+
+7---------------------------------------------------------------------------------------
+Nunit
+	
+	[Category("Default")]
+	[Category("DataDriven")]
+
+8---------------------------------------------------------------------------------------
+Xunit
+	
+	[Trait("Default")]
+	[Trait("DataDriven")]
+
+9---------------------------------------------------------------------------------------
+Nunit
+	
+	dotnet test --filter TestCategory=Default
+
+10---------------------------------------------------------------------------------------
+Xunit
+	
+	dotnet test --filter category=Default
