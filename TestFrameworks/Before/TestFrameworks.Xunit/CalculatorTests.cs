@@ -1,6 +1,6 @@
 using Xunit;
 
-namespace TestFrameworks.Nunit
+namespace TestFrameworks.Xunit
 {
     public class CalculatorTests
     {
