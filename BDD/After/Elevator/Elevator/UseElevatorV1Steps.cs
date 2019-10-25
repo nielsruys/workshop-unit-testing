@@ -5,6 +5,7 @@ using NSubstitute;
 namespace Elevator
 {
     [Binding]
+    [Scope(Feature = "UseElevatorV1")]
     public class UseElevatorV1Steps
     {
         IElevatorBox elevator;

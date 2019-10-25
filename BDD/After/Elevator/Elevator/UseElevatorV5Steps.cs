@@ -5,11 +5,11 @@ using TechTalk.SpecFlow;
 namespace Elevator
 {
     [Binding]
+    [Scope(Feature = "UseElevatorV5")]
     public class UseElevatorV5Steps
     {
         private IElevatorBox elevator;
 
-        [Scope(Feature = "UseElevatorV5")]
         [Given(@"the elevator is on the (.*) floor")]
         public void GivenTheElevatorIsOnTheFloor(int currentFloor)
         {
@@ -17,7 +17,6 @@ namespace Elevator
             elevator.CurrentFloor = currentFloor;
         }
 
-        [Scope(Feature = "UseElevatorV5")]
         [Given(@"(.*) wants to take elevator from (.*) floor to (.*) floor")]
         public void GivenUserWantsToTakeElevatorFromFloorToFloor(string userName, int currentFloor, int goingTo)
         {
@@ -31,14 +30,12 @@ namespace Elevator
             user.RequestFloor(elevator);
         }
 
-        [Scope(Feature = "UseElevatorV5")]
         [When(@"the elevator operates")]
         public void WhenTheElevatorOperates()
         {
             elevator.Operate();
         }
 
-        [Scope(Feature = "UseElevatorV5")]
         [Then(@"the elevator opens doors on (.*) floor")]
         public void ThenTheElevatorOpensDoorsOnFloor(int expectedFloor)
         {

@@ -5,11 +5,11 @@ using NSubstitute;
 namespace Elevator
 {
     [Binding]
+    [Scope(Feature = "UseElevatorV4")]
     public class UseElevatorV4Steps
     {
         private IElevatorBox elevator;
 
-        [Scope(Feature = "UseElevatorV4")]
         [Given(@"the elevator is on the (.*) floor")]
         public void GivenTheElevatorIsOnTheFloor(int currentFloor)
         {
@@ -17,7 +17,6 @@ namespace Elevator
             elevator.CurrentFloor = currentFloor;
         }
 
-        [Scope(Feature = "UseElevatorV4")]
         [When(@"the following elevator users:")]
         public void GivenTheFollowingElevatorUsers(Table table)
         {
@@ -30,14 +29,12 @@ namespace Elevator
             }
         }
 
-        [Scope(Feature = "UseElevatorV4")]
         [When(@"the elevator operates")]
         public void WhenTheElevatorOperates()
         {
             elevator.Operate();
         }
 
-        [Scope(Feature = "UseElevatorV4")]
         [Then(@"the elevator will open its door in this order:")]
         public void ThenTheElevatorWillOpenItsDoorInThisOrder(Table table)
         {

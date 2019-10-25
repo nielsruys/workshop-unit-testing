@@ -6,6 +6,7 @@ using System.Collections.Generic;
 namespace Elevator
 {
     [Binding]
+    [Scope(Feature = "UseElevatorV2")]
     public class UseElevatorV2Steps
     {
         IElevatorBox elevator;
