@@ -12,7 +12,7 @@ namespace TestDoubles.Tests
         {
             var windowMock = new Mock<Window>();
             var doorMock = new Mock<Door>();
-            SecurityCentral securityCentral = new SecurityCentral(windowMock.Object, doorMock.Object);
+            var securityCentral = new SecurityCentral(windowMock.Object, doorMock.Object);
 
             securityCentral.SecurityOn();
 

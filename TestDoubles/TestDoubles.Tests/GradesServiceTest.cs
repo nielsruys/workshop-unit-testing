@@ -8,23 +8,17 @@ namespace TestDoubles.Tests
 {
     public class GradesServiceTest
     {
-        private readonly Student _student;
-        private readonly Mock<Gradebook> _gradebookStub;
-
-        public GradesServiceTest()
-        {
-            _gradebookStub = new Mock<Gradebook>();
-            _student = new Student();
-        }
-
         [Fact]
         public void AverageGradeCalculationShouldBeOk()
         {
-            _gradebookStub.Setup(x => x.GradesFor(_student)).Returns(new double[] { 8, 6, 10 });
+            var student = new Student();
+            var gradebookStub = new Mock<Gradebook>();
+            gradebookStub.Setup(x => x.GradesFor(student)).Returns(new double[] { 8, 6, 10 });
+            var service = new GradesService(gradebookStub.Object);
 
-            double averageGrades = new GradesService(_gradebookStub.Object).GetAverageGrades(_student);
+            double averageGrade = service.GetAverageGrade(student);
 
-            Assert.Equal(8.0, averageGrades);
+            Assert.Equal(8.0, averageGrade);
         }
     }
 }

@@ -12,10 +12,9 @@ namespace TestDoubles.Tests
         [Fact]
         public void LogInWithPasswordShouldBeOk()
         {
-            var userName = "boby@bmail.com";
             var user = new User()
             {
-                Email = userName,
+                Email = "boby@bmail.com",
                 Password = "boby"
             };
             var service = new LoginService(new FakeAccountDao());

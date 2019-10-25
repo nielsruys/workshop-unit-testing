@@ -12,7 +12,7 @@ namespace TestDoubles.Tests.Services
             this.gradebook = gradebook;
         }
 
-        public double GetAverageGrades(Student student)
+        public double GetAverageGrade(Student student)
         {
             return gradebook.GradesFor(student).Average();
         }
