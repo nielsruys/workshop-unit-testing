@@ -1,0 +1,56 @@
+# Starter pipeline
+# Start with a minimal pipeline that you can customize to build and deploy your code.
+# Add steps that build, run tests, deploy, and more:
+# https://aka.ms/yaml
+
+trigger:
+- master
+
+pool:
+  vmImage: 'ubuntu-latest'
+
+
+variables:
+  BuildConfiguration: 'Release'
+
+steps:
+- task: DotNetCoreCLI@2
+  inputs:
+    command: restore
+    projects: |
+      CodeCoverage/After/*.sln
+    arguments: '--configuration $(BuildConfiguration)'
+  displayName: 'Restoring CodeCoverage.sln'
+
+- task: DotNetCoreCLI@2
+  inputs:
+    command: build
+    projects: |
+      CodeCoverage/After/*.sln
+    arguments: '--configuration $(BuildConfiguration)'
+  displayName: 'Building CodeCoverage.sln ...'
+
+- task: DotNetCoreCLI@2
+  inputs:
+    command: test
+    projects: |
+      CodeCoverage/After/**/*.Tests.csproj
+    arguments: '--configuration $(BuildConfiguration)'
+  displayName: 'Running unit-tests of CodeCoverage.sln ...'
+
+- task: DotNetCoreCLI@2
+  inputs:
+    command: publish
+    publishWebProjects: false
+    projects: |
+      CodeCoverage/After/CodeCoverage/*.csproj
+    zipAfterPublish: false
+    arguments: '-o --configuration $(BuildConfiguration) --output $(Build.ArtifactStagingDirectory)'
+  displayName: 'Generating artifact in $(Build.ArtifactStagingDirectory) ...'
+
+- task: PublishBuildArtifacts@1
+  inputs:
+    PathtoPublish: '$(Build.ArtifactStagingDirectory)'
+    ArtifactName: drop
+  displayName: "Publishing artifact from $(Build.ArtifactStagingDirectory) ..."
+
