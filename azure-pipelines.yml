@@ -54,7 +54,7 @@ steps:
     # see: https://github.com/danielpalme/ReportGenerator/wiki/Integration#attention
     reportDirectory: '$(build.artifactstagingdirectory)/TestResults'
 
-- task: mspremier.BuildQualityChecks.QualityChecks-task.BuildQualityChecks@5
+- task: BuildQualityChecks@6
   displayName: 'Checking coverage ...'
   inputs:
     checkCoverage: true
