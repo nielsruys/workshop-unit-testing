@@ -54,6 +54,15 @@ steps:
     # see: https://github.com/danielpalme/ReportGenerator/wiki/Integration#attention
     reportDirectory: '$(build.artifactstagingdirectory)/TestResults'
 
+- task: mspremier.BuildQualityChecks.QualityChecks-task.BuildQualityChecks@5
+  displayName: 'Checking coverage ...'
+  inputs:
+    checkCoverage: true
+    coverageFailOption: fixed
+    coverageType: branches
+    coverageThreshold: 90
+    buildConfiguration: '$(BuildConfiguration)'
+
 - task: DotNetCoreCLI@2
   inputs:
     command: publish
